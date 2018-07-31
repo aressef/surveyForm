@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.base-input-style {
+  font-size: 15px;
+  border: 1px solid rgb(28, 37, 119);
+  border-radius: 3px;
+  padding: 2px 5px;
+}
+
+body {
+  font-family: Tahoma, Helvetica, sans-serif;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(28, 37, 119);
+}
+
+.main-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5% 0;
+  width: 75%;
+}
+
+#title {
+  margin-bottom: 2%;
+  color: #fff;
+  font-weight: 100;
+}
+
+#survey-form {
+  padding: 5%;
+  background-color: rgb(247, 247, 247);
+  min-width: 75%;
+  border-radius: 5px;
+}
+
+.desc-div {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5%;
+}
+
+.left {
+  width: 45%;
+  display: inline-block;
+  text-align: right;
+  margin-right: 15px;
+}
+
+.right {
+  width: 50%;
+  display: inline-block;
+  text-align: left;
+  margin-left: 15px;
+}
+
+.general-information {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.name-div,
+.email-div,
+.age-div {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.text-input {
+  height: 25px;
+  min-width: 80%;
+}
+
+.skill-type,
+.landing-spot,
+.platform {
+  display: flex;
+  margin: 5% 0;
+}
+
+.labels {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.landing-spot-options,
+.platform-options {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#dropdown {
+  height: 25px;
+  min-width: 20%;
+}
+
+.inputs {
+  padding: 5px 0;
+}
+
+.comments-div {
+  display: flex;
+  margin: 10px 0;
+}
+
+#comments {
+  height: 100px;
+  min-width: 90%;
+}
+
+.submit-div {
+  display: flex;
+  justify-content: center;
+}
+
+input[type="submit"] {
+  font-size: 20px;
+  margin: 10px 0;
+  height: 40px;
+  width: 100px;
+  border: none;
+  border-radius: 3px;
+  background-color: #4db8ff;
+  color: #fff;
+}
+
+input[type="submit"]:hover {
+  font-size: 22px;
+  height: 45px;
+  width: 110px;
+}
+
+@media (max-width: 720px) {
+  .main-wrap {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .left {
+    text-align: left;
+    width: auto;
+    margin: 0;
+  }
+
+  .right {
+    width: auto;
+    margin: 0;
+  }
+
+  .general-info-labels {
+    margin-right: 5px;
+    width: 75px;
+  }
+
+  .text-input {
+    min-width: 200px;
+  }
+
+  .skill-type,
+  .landing-spot,
+  .platform {
+    flex-direction: column;
+  }
+
+  .labels {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+  }
+
+  .comments-div {
+    flex-direction: column;
+  }
+
+  #comments {
+    width: 100%;
+    margin: 0 auto;
+  }
+}

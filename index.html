@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Survey Form</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <script src="https://gitcdn.link/repo/freeCodeCamp/testable-projects-fcc/master/build/bundle.js"></script>
+</head>
+
+<body>
+
+  <div class="main-wrap">
+
+    <h1 id="title">Fortnite Skill Helper</h1>
+
+    <form id="survey-form">
+
+      <div class="desc-div">
+        <p id="description">Fill out the survey to find out how to improve your skillset.</p>
+      </div>
+
+      <div class="general-information">
+        <div class="name-div">
+          <div class="left general-info-labels">
+            <label for="name" id="name-label">* Name:</label>
+          </div>
+          <div class="right">
+            <input type="text" id="name" class="text-input base-input-style" required placeholder="Enter your name here">
+          </div>
+        </div>
+        <div class="email-div">
+          <div class="left general-info-labels">
+            <label for="email" id="email-label">* Email:</label>
+          </div>
+          <div class="right">
+            <input type="email" id="email" class="text-input base-input-style" required placeholder="Enter your email here">
+          </div>
+        </div>
+
+        <div class="age-div">
+          <div class="left general-info-labels">
+            <label for="age" id="number-label">Age:</label>
+          </div>
+          <div class="right">
+            <input type="number" id="number" class="text-input base-input-style" min="13" max="100" placeholder="18">
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-type">
+        <div class="left labels">
+          <label for="skill-type" id="skill-type-desc">What is your current area of strength?</label>
+        </div>
+        <div class="skill-type-options right">
+          <select name="skill-type" id="dropdown" class="skill-type-options">
+            <option value="run-and-gun">Run-and-Gun</option>
+            <option value="sniper">Sniper</option>
+            <option value="builder">Builder</option>
+            <option value="bush">Dude in the Bush </option>
+          </select>
+        </div>
+      </div>
+
+      <div class="platform">
+        <div class="left labels">
+          <label for="platform" id="platform-type-desc">What platform do you primarily play on?</label>
+        </div>
+        <div class="right">
+          <ul class="platform-options right">
+            <li class="inputs">
+              <input type="radio" name="platform" value="xbox" checked> Xbox
+            </li>
+            <li class="inputs">
+              <input type="radio" name="platform" value="playstation"> PlayStation
+            </li>
+            <li class="inputs">
+              <input type="radio" name="platform" value="pc"> PC
+            </li>
+            <li class="inputs">
+              <input type="radio" name="platform" value="switch"> Switch
+            </li>
+            <li class="inputs">
+              <input type="radio" name="platform" value="mobile"> Mobile
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="landing-spot">
+        <div class="left labels">
+          <label for="landing-spot" id="landing-spot-desc">Where are your favorite places to land? (Check all that apply)</label>
+        </div>
+        <div class="right">
+          <ul class="landing-spot-options">
+            <li class="inputs">
+              <input type="checkbox" name="landing-spot" value="tilted-towers"> Tilted Towers
+            </li>
+            <li class="inputs">
+              <input type="checkbox" name="landing-spot" value="snobby-shores"> Snobby Shores
+            </li>
+            <li class="inputs">
+              <input type="checkbox" name="landing-spot" value="fatal-fields"> Fatal Fields
+            </li>
+            <li class="inputs">
+              <input type="checkbox" name="landing-spot" value="anarchy-acres"> Anarchy Acres
+            </li>
+            <li class="inputs">
+              <input type="checkbox" name="landing-spot" value="pleasant-park"> Pleasant
+            </li>
+            <li class="inputs">
+              <input type="checkbox" name="landing-spot" value="lucky-landing"> Lucky Landing
+            </li>
+            <li class="inputs">
+              <input type="checkbox" name="landing-spot" value="retail-row"> Retail Row
+            </li>
+            <li class="inputs">
+              <input type="checkbox" name="landing-spot" value="tomato-town"> Tomato Town
+            </li>
+            <li class="inputs">
+              <input type="checkbox" name="landing-spot" value="risky-reels"> Risky Reels
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="comments-div">
+        <div class="left labels">
+          <label for="comments">Any comments or suggestions?</label>
+        </div>
+        <div class="right comment-box">
+          <textarea id="comments" class="base-input-style"></textarea>
+        </div>
+      </div>
+
+      <div class="submit-div">
+        <input type="submit" value="Submit" id="submit">
+      </div>
+
+    </form>
+
+  </div>
+
+</body>
+
+</html>
